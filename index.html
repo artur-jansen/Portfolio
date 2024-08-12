@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Artur Jansen</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top fundo-azul">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#" onClick={recarregarPagina}>
+                        <img class="logo" src="./assets/logo-header.png" alt="Logo com a letra A branca">
+                    </a>
+                    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2"
+                                strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-white btn text-start"
+                                    onclick="scrollToSection('sobre-mim')">Sobre mim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white btn text-start"
+                                    onclick="scrollToSection('skills')">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white btn text-start"
+                                    onclick="scrollToSection('formacoes')">Formações</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white btn text-start"
+                                    onclick="scrollToSection('experiencias')">Experiências</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white btn text-start"
+                                    onclick="scrollToSection('projetos')">Projetos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="portfolio-container">
+                <section class="portfolio-primeiro-container" id="sobre-mim">
+                    <div class="py-5 d-md-flex  align-items-center gap-4">
+                        <img class="foto-perfil" src="./assets/FOTO-PERFIL.jpeg" alt="Minha foto de perfil">
+                        <div>
+                            <h1><strong>Artur <strong class="cor-azulclaro">Jansen</strong> </strong></h1>
+                            <h3><strong><strong class="cor-azulclaro">Desenvolvedor</strong> Front-end</strong></h3>
+                            <div class="container-contato pb-2">
+                                <a class="container-contato-link"
+                                    href="https://www.linkedin.com/in/artur-jansen-aa5134255/"
+                                    style="background-color: #0077B5; color: white; gap: 0.2em;">
+                                    <i class="devicon-linkedin-plain"></i>
+                                    <span class="nome-contato-link mx-3">Meu LinkedIn</span>
+                                </a>
+
+                                <a class="container-contato-link" style="background-color: black; color: white;"
+                                    href="https://github.com/artur-jansen">
+                                    <i class="devicon-github-original"></i>
+                                    <span class="nome-contato-link mx-3">Meu Github</span>
+                                </a>
+
+                                <a class="container-contato-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=artur.jansenas@gmail.com&su=Assunto%20do%20Email&body=Mensagem%20aqui"
+                                    style="background-color: #ff5722; color: white; gap: 0.3em" data-bs-toggle="tooltip"
+                                    title="Email">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                    <span class="nome-contato-link mx-3">Me envie um email</span>
+                                </a>
+
+                                <a class="container-contato-link" href="https://drive.google.com/file/d/1JcRl5EFuGodC05971d2GHGbJC7iE5DYH/view?usp=sharing"
+                                    style="background-color: #0e5bd5; color: white; gap: 0.3em" data-bs-toggle="tooltip"
+                                    title="Curriculo">
+                                    <i class="bi bi-file-earmark-person"></i>
+                                    <span class="nome-contato-link mx-2">Meu Currículo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1>SOBRE MIM</h1>
+                    <p class="paragrafo-apresentacao">
+                        Meu nome é Artur Jansen, um desenvolvedor front-end apaixonado por criar experiências web
+                        intuitivas e envolventes. Mais abaixo contarei sobre minhas experiências, tenho aprimorado
+                        minhas habilidades em desenvolvimento de interfaces usando tecnologias modernas como React e
+                        CSS-in-JS e utilizando Typescrpt e algumas de suas ferramentas. Estou sempre em busca de
+                        novos desafios e oportunidades para aplicar minha experiência e contribuir com soluções
+                        inovadoras e de alta qualidade.
+                    </p>
+                </section>
+
+                <section class="portfolio-segundo-container" id="skills">
+                    <h1>SKILLS</h1>
+                    <div class="row mx-0 row-gap-4">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a class="link" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"
+                                aria-label="HTML" class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #E44D26;">
+                                    <i class="devicon-html5-plain"></i>
+                                    <p class="fs-6 text-center">HTML</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" aria-label="CSS"
+                                class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #1572B6;">
+                                    <i class="devicon-css3-plain"></i>
+                                    <p class="fs-6 text-center">CSS</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://www.javascript.com" target="_blank" aria-label="JavaScript" class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #F7DF1E;">
+                                    <i class="devicon-javascript-plain"></i>
+                                    <p class="fs-6 text-center">JAVASCRIPT</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://www.typescriptlang.org" target="_blank" aria-label="TypeScript"
+                                class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #007ACC;">
+                                    <i class="devicon-typescript-plain"></i>
+                                    <p class="fs-6 text-center">TYPESCRIPT</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://nodejs.org/pt" target="_blank" aria-label="Node" class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #339933;">
+                                    <i class="devicon-nodejs-plain-wordmark"></i>
+                                    <p class="fs-6 text-center">NODE.JS</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://reactjs.org" target="_blank" aria-label="React" class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #61DAFB;">
+                                    <i class="devicon-react-original"></i>
+                                    <p class="fs-6 text-center">REACT.JS</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://nextjs.org" target="_blank" aria-label="Next" class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #FFFFFF;">
+                                    <i class="devicon-nextjs-plain"></i>
+                                    <p class="fs-6 text-center">NEXT.JS</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://tailwindcss.com" target="_blank" aria-label="Tailwind CSS" class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #38BDF8;">
+                                    <i class="devicon-tailwindcss-original"></i>
+                                    <p class="fs-6 text-center">TAILWIND</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://getbootstrap.com" target="_blank" aria-label="Bootstrap" class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #563D7C;">
+                                    <i class="devicon-bootstrap-plain"></i>
+                                    <p class="fs-6 text-center">BOOTSTRAP</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://www.figma.com" target="_blank" aria-label="Figma" class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #F24E1E;">
+                                    <i class="devicon-figma-plain"></i>
+                                    <p class="fs-6 text-center">FIGMA</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://github.com" target="_blank" aria-label="GitHub" class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #FFFFFF;">
+                                    <i class="devicon-github-original"></i>
+                                    <p class="fs-6 text-center">GITHUB</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://azure.microsoft.com/pt-br/products/devops" target="_blank"
+                                aria-label="AzureDevops" class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #0078D7;">
+                                    <i class="devicon-azuredevops-plain"></i>
+                                    <p class="fs-6 text-center">AZURE DEVOPS</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://visualstudio.microsoft.com/pt-br/downloads/" target="_blank"
+                                aria-label="VisualStudio" class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #5C2D91;">
+                                    <i class="devicon-visualstudio-plain"></i>
+                                    <p class="fs-6 text-center">VISUAL STUDIO</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <a href="https://code.visualstudio.com/Download" target="_blank" aria-label="VsCode"
+                                class="link">
+                                <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                                    style="color: #007ACC;">
+                                    <i class="devicon-vscode-plain"></i>
+                                    <p class="fs-6 text-center">VS CODE</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="portfolio-terceiro-container" id="formacoes">
+                    <h1>FORMAÇÕES</h1>
+                    <div class="accordion" id="accordionFormacoes">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fundo-azul gap-2 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFormacoesOne"
+                                    aria-expanded="false" aria-controls="collapseFormacoesOne">
+                                    <i class="bi bi-pencil-square fs-4"></i><strong>Ciências da Computação</strong> - <i
+                                        class="bi bi-buildings fs-4"></i> Unifacs - <i class="bi bi-calendar3 fs-4"></i>
+                                    (08/2024 - 08/2027)
+                                </button>
+                            </h2>
+                            <div id="collapseFormacoesOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFormacoes">
+                                <div class="accordion-body fundo-cinza text-white">
+                                    Atuei como engenheiro de software trainee, fui utilizado como desenvolvedor full
+                                    stack, trabalhando tanto no back end quanto no front end. No back end, desenvolvo
+                                    micro serviços utilizando C#, garantindo qualidade das soluções. No front end,
+                                    participei de projetos Web, utilizando tecnologias como JavaScript e TypeScript para
+                                    entregar interfaces intuitivas e eficientes. Além disso, estive envolvido em
+                                    projetos internos da empresa, contribuindo para a inovação e melhoria dos processos
+                                    internos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="portfolio-terceiro-container" id="experiencias">
+                    <h1>EXPERIÊNCIAS</h1>
+                    <div class="accordion" id="accordionExperiencias">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fundo-azul gap-2 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseExperienciasOne"
+                                    aria-expanded="false" aria-controls="collapseExperienciasOne">
+                                    <i class="bi bi-pc-display fs-4"></i> <strong>Engenheiro de Software
+                                        Trainee</strong> - <i class="bi bi-buildings fs-4"></i> Lucas
+                                    Technology Services - <i class="bi bi-calendar3 fs-4"></i> (04/2024 - 08/24)
+                                </button>
+                            </h2>
+                            <div id="collapseExperienciasOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExperiencias">
+                                <div class="accordion-body fundo-cinza text-white">
+                                    Atuei como engenheiro de software trainee, fui utilizado como desenvolvedor full
+                                    stack, trabalhando tanto no back end quanto no front end. No back end, desenvolvo
+                                    micro serviços utilizando C#, garantindo qualidade das soluções. No front end,
+                                    participei de projetos Web, utilizando tecnologias como JavaScript e TypeScript para
+                                    entregar interfaces intuitivas e eficientes. Além disso, estive envolvido em
+                                    projetos internos da empresa, contribuindo para a inovação e melhoria dos processos
+                                    internos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="portfolio-quarto-container row mx-0" id="projetos">
+                    <h1>PROJETOS</h1>
+                    <div class="card fundo-cinza text-white col-12 col-md-4 col-xl-3 w-100 border-0 p-0" style="width: 18rem;">
+                        <img src="./assets/projetos/Img-Organize.png" class="card-img-top" alt="Imagem projeto pessoal">
+                        <div class="card-body">
+                          <h5 class="card-title"> <i class="bi bi-award cor-azulclaro"></i> OrgaNize</h5>
+                          <p class="card-text">O OrgaNize é um projeto que desenvolvi para facilitar a vida dos líderes de equipe, proporcionando uma maneira rápida e intuitiva de organizar e gerenciar times. Com foco na simplicidade e eficiência, o Organize oferece ferramentas que ajudam a otimizar a gestão de equipes, permitindo que os líderes concentrem-se no que realmente importa: alcançar resultados.</p>
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex gap-2 align-items-center justify-content-center">
+                                <a href="https://github.com/artur-jansen/projeto-organograma" class="sem-sublinha bg-black p-1 d-flex align-items-center justify-content-center text-white rounded-4 border-0"><i class="devicon-github-original"></i></a>
+                                <a href="https://artur-jansen.github.io/projeto-organograma" class="sem-sublinha bg-black px-1 d-flex align-items-center justify-content-center text-white rounded-4 border-0"><i class="bi bi-link-45deg cor-azulclaro"></i></a>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <i class="devicon-typescript-plain colored mt-1"></i>                                
+                                <i class="devicon-javascript-plain colored mt-1"></i>                                
+                                <i class="devicon-html5-plain colored mt-1"></i>                                
+                                <i class="devicon-css3-plain colored mt-1"></i>                                
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                </section>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
