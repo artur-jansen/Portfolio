@@ -123,6 +123,12 @@ body {
     margin-top: 0.5em;
 }
 
+.container-accordions{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .accordion-button{
     color: rgb(202, 201, 201);
 }
